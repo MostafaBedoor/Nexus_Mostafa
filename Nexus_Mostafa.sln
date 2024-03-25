@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus_Mostafa.Server", "Nexus_Mostafa.Server\Nexus_Mostafa.Server.csproj", "{523BB43F-FC88-4F05-92E2-5DD2BC6EB53D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "nexus_mostafa.client", "nexus_mostafa.client\nexus_mostafa.client.esproj", "{68302EF8-28B1-43AE-967C-3FCF15324741}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{523BB43F-FC88-4F05-92E2-5DD2BC6EB53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523BB43F-FC88-4F05-92E2-5DD2BC6EB53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523BB43F-FC88-4F05-92E2-5DD2BC6EB53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523BB43F-FC88-4F05-92E2-5DD2BC6EB53D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68302EF8-28B1-43AE-967C-3FCF15324741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68302EF8-28B1-43AE-967C-3FCF15324741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68302EF8-28B1-43AE-967C-3FCF15324741}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{68302EF8-28B1-43AE-967C-3FCF15324741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68302EF8-28B1-43AE-967C-3FCF15324741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68302EF8-28B1-43AE-967C-3FCF15324741}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {669E3450-8C80-4E08-8BCB-1E207F25D0A9}
+	EndGlobalSection
+EndGlobal

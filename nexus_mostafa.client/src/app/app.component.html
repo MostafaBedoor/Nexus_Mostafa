@@ -1,0 +1,50 @@
+<h1 id="tableLabel">Nexus Analytica - Users</h1>
+
+<p *ngIf="!users"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+
+<div>
+  <span>Search Field</span><input type="text" [(ngModel)]="searchField" />
+  <br />
+  <span>Search Value</span><input type="text" [(ngModel)]="searchValue" />
+  <br />
+  <button (click)="search(searchField, searchValue)">Search</button>
+  <br />
+  <button (click)="sort()">Sort by Last Login Date</button>
+</div>
+<table *ngIf="users">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Active</td>
+      <td>Last Login</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.active }}</td>
+      <td>{{ user.last_login }}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td>Average users</td>
+      <td>{{ ageAvg }}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Average users</td>
+      <td>{{ activeUsers }}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Average users</td>
+      <td>{{ inactiveUsers }}</td>
+    </tr>
+  </tfoot>
+</table>
